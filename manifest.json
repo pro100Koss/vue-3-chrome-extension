@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Vue 3 Chrome Extension",
+  "version": "<<packageJson.version>>",
+  "version_name": "<<packageJson.version>>",
+  "description": "<<packageJson.description>>",
+  "author": "Kostya Zamurnyak",
+  "icons": {
+    "128": "favicon.ico"
+  },
+  "background": {
+    "service_worker": "worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
