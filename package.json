@@ -1,11 +1,13 @@
 {
   "name": "vue-3-chrome-extension",
+  "nameManifest": "Vue 3 Chrome Extension",
   "version": "0.1.0",
   "description": "Chrome Extension Example Vue 3 + Vite",
   "license": "MIT",
   "scripts": {
-    "dev": "vite build --watch --mode development --config vite/vite.config.dev.ts",
-    "stage": "vite build --mode staging",
+    "dev": "vite build --mode dev --config vite/vite.config.dev.ts",
+    "build:stage": "vite build --mode stage --config vite/vite.config.stage.ts && zip -r ./build/snaplore-stage.zip ./build/stage/*",
+    "build:prod": "vite build --mode prod && zip -r ./build/snaplore-prod.zip ./build/prod/*",
     "build": "run-p type-check build-only",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",

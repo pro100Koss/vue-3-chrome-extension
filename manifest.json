@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Vue 3 Chrome Extension",
+  "name": "<<packageJson.name>>",
   "version": "<<packageJson.version>>",
   "version_name": "<<packageJson.version>>",
   "description": "<<packageJson.description>>",
